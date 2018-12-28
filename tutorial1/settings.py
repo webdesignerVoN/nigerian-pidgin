@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
 
     #3rd Party Apps
-    'widget_tweaks', 
+    'widget_tweaks',
+    'markdown',
 ]
 
 MIDDLEWARE = [
