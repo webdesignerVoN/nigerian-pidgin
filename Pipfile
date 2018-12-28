@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 django-widget-tweaks = "*"
+gunicorn = "==19.9.0"
 
 [dev-packages]
 
