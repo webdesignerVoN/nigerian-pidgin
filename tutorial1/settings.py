@@ -125,8 +125,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGIN_URL = 'login'
 
-STATIC_ROOT = ('boards/static')
+STATIC_ROOT = 'boards/static'
 
-STATICFILES_DIRS = ('boards/static')
+STATICFILES_DIRS = 'boards/static'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
