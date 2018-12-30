@@ -1,6 +1,26 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %} Start A New Topic {% endblock %}
+
+{% block stylesheet %}
+    
+    <link rel="stylesheet" href="{% static 'boards/css/simplemde.min.css' %}">
+
+{% endblock %}
+
+{% block javascript %}
+
+    <script src="{% static 'boards/js/simplemde.min.js' %}"></script>
+    
+    <script>
+
+        var simplemde = new SimpleMDE();
+    
+    </script>
+
+{% endblock %}
 
 
 {% block breadcrumb %}
