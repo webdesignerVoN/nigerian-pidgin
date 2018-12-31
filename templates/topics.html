@@ -35,13 +35,13 @@
 
 		        <th>Topic</th>
 
-   			   	<th>Starter</th>
+   			   	<th> Person Wey Start Am</th>
 
-            <th>Replies</th>
+            <th>People Wey Talk Sef</th>
 
-            <th>Views</th>
+            <th>Looku Looku</th>
 
-            <th>Last Update</th>
+            <th>Last Time Person Talk For The Topic</th>
 
    			</tr>
 
@@ -75,7 +75,7 @@
 
                             {% if topic.has_many_pages %}
 
-                            ... <a href="{{ topic_url }}?page={{ topic.get_page_count }}"> Last Page </a>
+                            ... <a href="{{ topic_url }}?page={{ topic.get_page_count }}"> Da Last Page </a>
 
                             {% endif %}
 

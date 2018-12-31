@@ -1,8 +1,10 @@
+from django.contrib.auth import login as auth_login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views.generic import UpdateView
+from django.shortcuts import redirect, render
 
 from .forms import SignUpForm
 
@@ -11,7 +13,7 @@ def signup(request):
 		form = SignUpForm(request.POST)
 		if form.is_valid():
 			user = form.save()
-			login(request, user)
+			auth_login(request, user)
 			return redirect('home')
 
 	else:

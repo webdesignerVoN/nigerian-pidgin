@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %} Post A Reply {% endblock %}
+{% block title %} Talk Sef For This Matter {% endblock %}
 
 {% block stylesheet %}
     
@@ -29,7 +29,7 @@
 <li class="breadcrumb-item"> <a href="{% url 'board_topics' topic.board.pk %}"> {{topic.board.name}} </a> </li>
 <li class="breadcrumb-item"> <a href="{% url 'topic_posts' topic.board.pk topic.pk %}"> {{topic.subject}} </a> </li>
 
-<li class="breadcrumb-item active"> Post A Reply </li>
+<li class="breadcrumb-item active"> Talk Your Own </li>
 
 {% endblock %}
 
@@ -41,7 +41,7 @@
 
         {% include 'includes/form.html' %}
 
-        <button type="submit" class="btn btn-success"> Post A Reply </button>
+        <button type="submit" class="btn btn-success"> Talk Your Own </button>
 
     </form>
 

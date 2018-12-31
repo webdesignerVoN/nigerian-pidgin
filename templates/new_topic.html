@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %} Start A New Topic {% endblock %}
+{% block title %} Oya Start New Topic {% endblock %}
 
 {% block stylesheet %}
     
@@ -25,10 +25,10 @@
 
 {% block breadcrumb %}
 
-<li class="breadcrumb-item"> <a href="{% url 'home' %}"> Boards </a> </li>
+<li class="breadcrumb-item"> <a href="{% url 'home' %}"> Forums </a> </li>
 <li class="breadcrumb-item"> <a href="{% url 'board_topics' board.pk %}"> {{board.name}} </a> </li>
 
-<li class="breadcrumb-item active"> New Topic </li>
+<li class="breadcrumb-item active"> Oya Start Your New Topic </li>
 
 {% endblock %}
 
@@ -40,7 +40,7 @@
 
         {% include 'includes/form.html' %}
 
-    	<button type="submit" class="btn btn-success"> Post </button>
+    	<button type="submit" class="btn btn-success"> Post Your New Topic Jare </button>
     	
     </form>
 

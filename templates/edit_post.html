@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %} Edit Post {% endblock %}
+{% block title %} Change Wetin You Write {% endblock %}
 
 {% block stylesheet %}
     
@@ -29,7 +29,7 @@
 <li class="breadcrumb-item"> <a href="{% url 'board_topics' post.topic.board.pk %}"> {{post.topic.board.name}} </a> </li>
 <li class="breadcrumb-item"> <a href="{% url 'topic_posts' post.topic.board.pk post.topic.pk %}"> {{post.topic.subject}} </a> </li>
 
-<li class="breadcrumb-item active"> Edit Post </li>
+<li class="breadcrumb-item active"> Change Wetin You Write </li>
 
 {% endblock %}
 
@@ -41,7 +41,7 @@
 
         {% include 'includes/form.html' %}
 
-    	<button type="submit" class="btn btn-success"> Save Changes </button>
+    	<button type="submit" class="btn btn-success"> Save Wetin You Change </button>
 
     	<a href="{% url 'topic_posts' post.topic.board.pk post.topic.pk %}" class="btn btn-outline-secondary role="button"> Cancel </a>
     	
