@@ -25,11 +25,11 @@
 
 {% block breadcrumb %}
 
-<li class="breadcrumb-item"> <a href="{% url 'home' %}"> Boards </a> </li>
+<li class="breadcrumb-item"> <a href="{% url 'home' %}"> Forums </a> </li>
 <li class="breadcrumb-item"> <a href="{% url 'board_topics' topic.board.pk %}"> {{topic.board.name}} </a> </li>
 <li class="breadcrumb-item"> <a href="{% url 'topic_posts' topic.board.pk topic.pk %}"> {{topic.subject}} </a> </li>
 
-<li class="breadcrumb-item active"> Talk Your Own </li>
+<li class="breadcrumb-item active">Talk Your Own</li>
 
 {% endblock %}
 
@@ -41,7 +41,7 @@
 
         {% include 'includes/form.html' %}
 
-        <button type="submit" class="btn btn-success"> Talk Your Own </button>
+        <button type="submit" class="btn btn-info">Talk Your Own</button>
 
     </form>
 

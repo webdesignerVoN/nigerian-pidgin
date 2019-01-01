@@ -9,7 +9,7 @@
 
 {% block breadcrumb %}
 
-<li class="breadcrumb-item"> <a href="{% url 'home' %}"> Boards </a> </li>
+<li class="breadcrumb-item"> <a href="{% url 'home' %}"> Forums </a> </li>
 <li class="breadcrumb-item"> <a href="{% url 'board_topics' topic.board.pk %}"> {{topic.board.name}} </a> </li>
 
 <li class="breadcrumb-item active"> {{ topic.subject }} </li>
@@ -20,7 +20,7 @@
 
     <div class="mb-4">
 
-        <a href="{% url 'reply_topic' topic.board.pk topic.pk %}" class="btn btn-primary" role="button">Reply</a>
+        <a href="{% url 'reply_topic' topic.board.pk topic.pk %}" class="btn btn-info" role="button">Reply</a>
     
     </div>
 
